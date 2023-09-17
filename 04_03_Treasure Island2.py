@@ -1,6 +1,9 @@
+# we have 3 lists
 row1 = ["⬜️","️⬜️","️⬜️"]
 row2 = ["⬜️","⬜️","️⬜️"]
 row3 = ["⬜️️","⬜️️","⬜️️"]
+
+#nested list
 map = [row1, row2, row3]
 print(f"{row1}\n{row2}\n{row3}")
 
