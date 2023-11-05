@@ -1,8 +1,3 @@
-#Step 5
-
-import sys
-sys.path.insert(0,"C:\PYProjects\Pr1")
-import test1
 
 stages = ['''
   +---+
@@ -116,7 +111,7 @@ lives = 6
 
 #TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
 print(logo)
-print(test1.a)
+#print(test1.a)
 
 #Testing code
 # print(f'Pssst, the solution is {chosen_word}.')

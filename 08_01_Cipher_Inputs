@@ -1,0 +1,17 @@
+def greet():
+    print ("Hello")
+greet()
+
+def greet_name(name):
+    print (f"Hello {name}")
+greet_name("Max")
+
+def greet_name_locat(name, location):
+    print (f"Hello {name}")
+    print (f"I am from {location}")
+greet_name_locat("Jack","Moscow")
+
+def greet_name_locat_fix(name,location):
+    print (f"Hello {name}")
+    print (f"I am from {location}")
+greet_name_locat_fix(location="Bishkek",name="Fred")
