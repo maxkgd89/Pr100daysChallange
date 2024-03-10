@@ -75,9 +75,9 @@ logo = '''
                     __/ |                      
                    |___/    '''
 
-                                                                    
-                                                                    
-
+#import sys                                                                    
+#sys.path.insert(0,"C:\PYProjects\Pr100daysChallenge")                                                                    
+#import 0700HangmanWords
 word_list = [
 'abruptly', 
 'absurd', 
