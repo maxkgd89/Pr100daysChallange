@@ -1,129 +1,18 @@
-
-
-
-
-
-
-
-
-
-
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
-logo = ''' 
- _                                             
-| |                                            
-| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
-| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
-| | | | (_| | | | | (_| | | | | | | (_| | | | |
-|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-                    __/ |                      
-                   |___/    '''
-
-#import sys                                                                    
-#sys.path.insert(0,"C:\PYProjects\Pr100daysChallenge")                                                                    
-#import 0700HangmanWords
-word_list = [
-'abruptly', 
-'absurd', 
-'abyss', 
-'affix', 
-'askew', 
-'avenue', 
-'awkward', 
-'axiom', 
-'azure', 
-'bagpipes', 
-'bandwagon', 
-'banjo', 
-'bayou', 
-'beekeeper', 
-'bikini', 
-'blitz', 
-'blizzard', 
-'boggle', 
-'bookworm', 
-'boxcar', 
-'boxful', 
-'buckaroo', 
-'buffalo', 
-'buffoon', 
-'buxom', 
-'buzzard']
-
+import logo
+import words
 import random
 
 #TODO-1: - Update the word list to use the 'word_list' from hangman_words.py
 #Delete this line: word_list = ["ardvark", "baboon", "camel"]
 
-
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(words.word_list)
 word_length = len(chosen_word)
 
 end_of_game = False
 lives = 6
 
 #TODO-3: - Import the logo from hangman_art.py and print it at the start of the game.
-print(logo)
-#print(test1.a)
-
-#Testing code
-# print(f'Pssst, the solution is {chosen_word}.')
+print(logo.logo)
 
 #Create blanks
 display = []
@@ -165,4 +54,5 @@ while not end_of_game:
 
     #TODO-2: - Import the stages from hangman_art.py and make this error go away.
     #from hangman_art import stages
+    from stagesC import stages
     print(stages[lives])
